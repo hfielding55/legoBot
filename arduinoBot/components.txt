@@ -1,0 +1,14 @@
+Decent number of wires
+1x Breadboard
+1x Arduino Uno
+1x 10 pin Arduino lcd tft screen
+1x Diode 1N4007 (any small diode will do)
+3x 6x6mm push switch
+3x 20K ohm resistor
+
+For connecting the cables:
+There are various ways for splitting the cable and connecting it to the breadboard, you are welcome to use any other method as long as it splits all six wires. I used:
+2x 6 pin terminal block
+2x lego ev3 cable - cut and stripped into the 6 individual cables.
+
+1x lego ev3 touch sensor
