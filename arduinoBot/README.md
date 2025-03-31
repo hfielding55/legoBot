@@ -1,6 +1,6 @@
 Arduino code: the code has a UI for the tft screen. The screen displays three options which the user can scroll between with the left and right buttons. The user can then use the middle button to select. The Arduino will then put its output signal HIGH for a set amount of time based on the item selected.
 
-ev3 code: The code is a small loop that runs a function when it detects a signal from its touch sensor. The touch sensor is linked to the arduino so the arduino can send signals. When a signal is detected, it reads every 50ms till the signal is LOW again. it then runs a routine which turns a certain amount before lowering and raising its crane before returning to the beginning.
+ev3 code: The code is a small loop that runs a function when it detects a signal from its touch sensor. The touch sensor is linked to the arduino so the arduino can send signals. When a signal is detected, it reads every 50ms till the signal is LOW again. it then runs a routine which turns a certain amount before lowering and raising its crane before returning to the beginning. We found this website[10] that showed us how to control the motors using micropython.
 
 Circuit: 
 
@@ -47,3 +47,4 @@ wesbites:
 <br/>[7] https://docs.arduino.cc/retired/getting-started-guides/TFT/
 <br/>[8] https://code.visualstudio.com/download
 <br/>[9] https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE
+<br/>[10] https://pybricks.com/ev3-micropython/ev3devices.html
