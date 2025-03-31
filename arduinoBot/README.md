@@ -17,6 +17,8 @@ The circuit went through various stages of development. I first found a website[
 
 By adding a diode in the blue serial cable, allowing signals to go from the touch sensor to the ev3 but not the other way, we were able to make the ev3 detect the touch sensor correctly and also take signals from the Arduino. The diode also stops the arduino signals from travelling to the touch sensor instead of the ev3.
 
+The TFT screen inputs setup can be found here[7], for arduino uno you'll need to scroll quite far down
+
 
 
 wesbites:
@@ -26,3 +28,4 @@ wesbites:
 <br/>[4] https://etcher.en.uptodown.com/windows/download/3970628
 <br/>[5] https://education.lego.com/en-gb/downloads/mindstorms-ev3/software/
 <br/>[6] https://www.informit.com/articles/article.aspx?p=2454873
+<br/>[7] https://docs.arduino.cc/retired/getting-started-guides/TFT/
