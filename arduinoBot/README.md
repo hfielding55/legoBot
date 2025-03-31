@@ -17,7 +17,13 @@ The circuit went through various stages of development. I first found a website[
 
 By adding a diode in the blue serial cable, allowing signals to go from the touch sensor to the ev3 but not the other way, we were able to make the ev3 detect the touch sensor correctly and also take signals from the Arduino. The diode also stops the arduino signals from travelling to the touch sensor instead of the ev3.
 
-The TFT screen inputs setup can be found here[7], for arduino uno you'll need to scroll quite far down
+The TFT screen inputs setup can be found here[7], for arduino uno you'll need to scroll quite far down.
+<br/> The full circuit diagram can be found in "circuit.png" as well as the component list in "components.txt" in the same folder as this file.
+
+TO USE:
+<br/>Ensure visual studio code[8], balena etcher 1.6.0[4] and the arduino IDE[9] are installed and setup.
+<br/>Build circuit according to specifications shown in circuit.png and components.txt and connect arduino to shown ports.
+<br/>unzip "
 
 
 
@@ -29,3 +35,5 @@ wesbites:
 <br/>[5] https://education.lego.com/en-gb/downloads/mindstorms-ev3/software/
 <br/>[6] https://www.informit.com/articles/article.aspx?p=2454873
 <br/>[7] https://docs.arduino.cc/retired/getting-started-guides/TFT/
+<br/>[8] https://code.visualstudio.com/download
+<br/>[9] https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE
