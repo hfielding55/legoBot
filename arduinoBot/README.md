@@ -14,15 +14,15 @@ The circuit went through various stages of development. I first found a website[
 <br/>Red: ground - using this as the ground creates a circuit of 5v
 <br/>Black: ground - using this as the ground creates a circuit of 3.3v
 <br/>White: analog
-<br/>By adding
+
+By adding a diode in the blue serial cable, allowing signals to go from the touch sensor to the ev3 but not the other way, we were able to make the ev3 detect the touch sensor correctly and also take signals from the Arduino. The diode also stops the arduino signals from travelling to the touch sensor instead of the ev3.
 
 
 
 wesbites:
-
-[1] https://www.dexterindustries.com/Arduberry/example-projects-with-arduberry-and-raspberry-pi/connecting-ev3-arduino/
-[2] https://makezine.com/projects/hacking-the-lego-ev3-build-your-own-object-sensor-eyes/
-[3] https://www.ev3dev.org/news/2018/06/14/ev3dev-stretch/
-[4] https://etcher.en.uptodown.com/windows/download/3970628
-[5] https://education.lego.com/en-gb/downloads/mindstorms-ev3/software/
-[6] https://www.informit.com/articles/article.aspx?p=2454873
+<br/>[1] https://www.dexterindustries.com/Arduberry/example-projects-with-arduberry-and-raspberry-pi/connecting-ev3-arduino/
+<br/>[2] https://makezine.com/projects/hacking-the-lego-ev3-build-your-own-object-sensor-eyes/
+<br/>[3] https://www.ev3dev.org/news/2018/06/14/ev3dev-stretch/
+<br/>[4] https://etcher.en.uptodown.com/windows/download/3970628
+<br/>[5] https://education.lego.com/en-gb/downloads/mindstorms-ev3/software/
+<br/>[6] https://www.informit.com/articles/article.aspx?p=2454873
