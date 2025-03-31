@@ -21,16 +21,26 @@ The TFT screen inputs setup can be found here[7], for arduino uno you'll need to
 <br/> The full circuit diagram can be found in "circuit.png" as well as the component list in "components.txt" in the same folder as this file.
 
 TO USE:
-<br/>Ensure visual studio code[8], balena etcher 1.6.0[4] and the arduino IDE[9] are installed and setup.
-<br/>Build circuit according to specifications shown in circuit.png and components.txt and connect arduino to shown ports.
-<br/>unzip "
-
+<br/>1. Ensure visual studio code[8], balena etcher 1.6.0[4] and the arduino IDE[9] are installed and setup.
+<br/>2. Build circuit according to specifications shown in circuit.png and components.txt and connect arduino to shown ports.
+<br/>3. Extract "aruinoCode.zip" and open in the arduino IDE. Connect computer to the Arduino and upload the program.
+<br/>4. Download "ev3dev-stretch" file from this website[3], then flash to microSD card using balena etcher.
+<br/>5. Insert microSD into ev3 brick and turn on
+<br/>6. Extract and open "micropython.zip" in visual studio code
+<br/>7. In visual studio code, go to "view" at the top and selcet "Extensions". Search for an install "LEGO® MINDSTORMS® EV3 MicroPython"
+<br/>8. Connect ev3 to computer using its USB Mini port. In the bottom of the explorer tab there should be a section called "EV3 DEVICE BROWSER"
+<br/>9. Open the device browser menu and select "Click to connect to a device" and the ev3 brick should appear as an open. Select it.
+<br/>10. Run the program to upload it to the ev3, it will crash immediatly but that is expected.
+<br/>11. Disconnect ev3 brick from computer and build lego crane following (INSERT LEGO INSTRUCTION FILE NAME)
+<br/>12. Ensure cable to the breadboard is connected in port 1 of the ev3 brick.
+<br/>13. Navigate to file browser on the ev3 and find the name of the project. Open it and run "main.py".
+<br/>14. Everything should be running correctly now
 
 
 wesbites:
 <br/>[1] https://www.dexterindustries.com/Arduberry/example-projects-with-arduberry-and-raspberry-pi/connecting-ev3-arduino/
 <br/>[2] https://makezine.com/projects/hacking-the-lego-ev3-build-your-own-object-sensor-eyes/
-<br/>[3] https://www.ev3dev.org/news/2018/06/14/ev3dev-stretch/
+<br/>[3] https://www.ev3dev.org/downloads/
 <br/>[4] https://etcher.en.uptodown.com/windows/download/3970628
 <br/>[5] https://education.lego.com/en-gb/downloads/mindstorms-ev3/software/
 <br/>[6] https://www.informit.com/articles/article.aspx?p=2454873
