@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- Ensure mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Your Bounty Hunter!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #333; /* Dark grey background */
+      color: white;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+      background-color: #444; /* Slightly lighter for header contrast */
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 10px;
+    }
+    .grid-item {
+      border: 2px solid #fff; /* White border */
+      border-radius: 5px;
+      text-align: center;
+      padding: 10px;
+      min-height: 200px; /* Ensures boxes are equally sized */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .grid-item p {
+      margin: 0;
+      font-size: 1em;
+    }
+  </style>
+
+  <script>
+    // Generic function to send a command to the EV3
+    function sendCommand(commandName) {
+      // Adjust the IP and port to match your EV3 setup:
+      // (Ensure your EV3 or your server on EV3 is at 10.108.73.254:8081)
+      fetch('http://10.108.73.254:8089/' + commandName)
+        .then(response => response.text())
+        .then(data => {
+          console.log(data);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('Error sending command.');
+        });
+    }
+  </script>
+</head>
+<body>
+  <h1>Choose your Bounty Hunter</h1>
+  <div class="grid-container">
+    <div class="grid-item" onclick="sendCommand('dengar')">
+      <img src="Images/dengar.png" alt="Dengar">
+      <p>Dengar</p>
+    </div>
+    <div class="grid-item" onclick="sendCommand('ig')">
+      <img src="Images/ig-88.png" alt="IG-88a">
+      <p>IG-88a</p>
+    </div>
+    <div class="grid-item" onclick="sendCommand('boba')">
+      <img src="Images/boba.png" alt="Boba Fett">
+      <p>Boba Fett</p>
+    </div>
+    <div class="grid-item" onclick="sendCommand('bossk')">
+      <img src="Images/bossk.png" alt="Bossk">
+      <p>Bossk</p>
+    </div>
+    <div class="grid-item" onclick="sendCommand('lom')">
+      <img src="Images/lom-4.png" alt="Lom-4">
+      <p>Lom-4</p>
+    </div>
+    <div class="grid-item" onclick="sendCommand('zuckuss')">
+      <img src="Images/zuckuss.png" alt="Zuckuss">
+      <p>Zuckuss</p>
+    </div>
+  </div>
+</body>
+</html>
