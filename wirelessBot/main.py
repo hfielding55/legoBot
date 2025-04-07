@@ -156,7 +156,7 @@ sensor4 = ColorSensor(Port.S4)
 #     motorC.stop()
 #     motorD.stop()
 
-def handle_request(bh):
+def handle_request(bh): #refine all functions down to one function, saves memory
     angle = bh * 475
     if angle > 951:
         angle = angle + 425
