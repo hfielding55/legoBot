@@ -29,7 +29,7 @@ TO USE:
 <br/>8. Connect ev3 to computer using its USB Mini port. In the bottom of the explorer tab there should be a section called "EV3 DEVICE BROWSER"
 <br/>9. Open the device browser menu and select "Click to connect to a device" and the ev3 brick should appear as an open. Select it.
 <br/>10. Run the program to upload it to the ev3, it will crash immediatly but that is expected.
-<br/>11. Disconnect ev3 brick from computer and build lego crane to match the photos in the file "build". The sensor should be in port 1, the crane turntable in port D and the crane arm in port A.
+<br/>11. Disconnect ev3 brick from computer and build lego crane to match the photos in the file "design". The sensor should be in port 1, the crane turntable in port D and the crane arm in port A.
 <br/>12. Ensure cable to the breadboard is connected in port 1 of the ev3 brick.
 <br/>13. Navigate to file browser on the ev3 and find the name of the project. Open it and run "main.py".
 <br/>14. Everything should be running correctly now
