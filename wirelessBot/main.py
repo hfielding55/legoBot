@@ -20,7 +20,7 @@ motorC = Motor(Port.C)
 motorD = Motor(Port.D)
 sensor4 = ColorSensor(Port.S4)
 
-def handle_dengar():
+def handle_dengar(): #functions for each bounty hunter to send it to darth vader
     motorD.run_angle(700, 360)
     motorD.stop()
     while True:
@@ -157,7 +157,7 @@ def handle_zuckuss():
     motorD.stop()
 
 def start_server(port=8080):
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #open port to listen to request from website
     s.bind(('', port))
     s.listen(1)
 
@@ -165,7 +165,7 @@ def start_server(port=8080):
         client, addr = s.accept()
         request = client.recv(1024).decode('utf-8')
 
-        if "GET /dengar" in request:
+        if "GET /dengar" in request: #run different functions dependant on request from website
             handle_dengar()
             response = "HTTP/1.1 200 OK\r\n\r\nOK"
         elif "GET /ig" in request:
@@ -186,7 +186,7 @@ def start_server(port=8080):
         else:
             # Unknown path
             response = "HTTP/1.1 404 Not Found\r\n\r\nNot Found"
-        motorA.stop()
+        motorA.stop() #fully stops motors once finished
         motorB.stop()
         motorC.stop()
         motorD.stop()
